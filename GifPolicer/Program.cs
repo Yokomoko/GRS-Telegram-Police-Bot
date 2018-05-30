@@ -82,8 +82,8 @@ namespace GifPolice {
                         if (Enum.TryParse(splitMsg[0].Replace(@"/", "").Replace("@GroestlPoliceBot", ""), out command)) {
                             switch (command) {
                                 case BotCommands.status:
-                                    var msg = $"Gifstapo Bot Removes Media Messages if more than {MaxGifCount} {(MaxGifCount < 2 ? "media message is" : "media messages are")} sent within {NumberofMinutes} {(NumberofMinutes < 2 ? "minute" : "minutes")}";
-                                    msg += $"{Environment.NewLine}Restrict Period: {DaysToRestrict}{Environment.NewLine}";
+                                    var msg = $"Gifstapo Bot Removes Media Messages if more than {MaxGifCount} {(MaxGifCount < 2 ? "media message is" : "media messages are")} sent within {NumberofMinutes} {(NumberofMinutes < 2 ? "minute" : "minutes")}.";
+                                    msg += $"{Environment.NewLine}Restrict Period: {DaysToRestrict}{Environment.NewLine} days";
                                     msg += $"Strike Count {MaxStrikeCount}{Environment.NewLine}{Environment.NewLine}You will be restricted if you reach your maximum strike count.";
 
                                     await BotClient.SendTextMessageAsync(message.Message.Chat.Id, msg);
