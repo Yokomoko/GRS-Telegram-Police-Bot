@@ -22,5 +22,53 @@ namespace GifPolice.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int MaxGifCount {
+            get {
+                return ((int)(this["MaxGifCount"]));
+            }
+            set {
+                this["MaxGifCount"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int NumberOfMinutes {
+            get {
+                return ((int)(this["NumberOfMinutes"]));
+            }
+            set {
+                this["NumberOfMinutes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int NumberOfStrikes {
+            get {
+                return ((int)(this["NumberOfStrikes"]));
+            }
+            set {
+                this["NumberOfStrikes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int DaysToRestrict {
+            get {
+                return ((int)(this["DaysToRestrict"]));
+            }
+            set {
+                this["DaysToRestrict"] = value;
+            }
+        }
     }
 }
