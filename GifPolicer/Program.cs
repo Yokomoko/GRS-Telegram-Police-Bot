@@ -83,7 +83,7 @@ namespace GifPolice {
                             switch (command) {
                                 case BotCommands.status:
                                     var msg = $"Gifstapo Bot Removes Media Messages if more than {MaxGifCount} {(MaxGifCount < 2 ? "media message is" : "media messages are")} sent within {NumberofMinutes} {(NumberofMinutes < 2 ? "minute" : "minutes")}.";
-                                    msg += $"{Environment.NewLine}Restrict Period: {DaysToRestrict}{Environment.NewLine} days";
+                                    msg += $"{Environment.NewLine}Restrict Period: {DaysToRestrict} {(DaysToRestrict < 2 ? "day" : "days")}{Environment.NewLine}";
                                     msg += $"Strike Count {MaxStrikeCount}{Environment.NewLine}{Environment.NewLine}You will be restricted if you reach your maximum strike count.";
 
                                     await BotClient.SendTextMessageAsync(message.Message.Chat.Id, msg);
