@@ -1,0 +1,7 @@
+﻿{
+  "MaxGifCount": 1,
+  "NumberOfMinutes": 3,
+  "NumberOfStrikes": 3,
+  "DaysToRestrict": 2,
+  "TelegramToken": ""
+}

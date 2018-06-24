@@ -52,7 +52,7 @@ namespace GifPolice {
 
         #region Public Methods
 
-        public static async void TimerCallback(Object o) {
+        public static void TimerCallback(Object o) {
             Console.Clear();
         }
 
